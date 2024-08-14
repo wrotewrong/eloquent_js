@@ -137,4 +137,12 @@ function goalOrientedRobot({ place, parcels }, route) {
   return { direction: route[0], memory: route.slice(1) };
 }
 
-module.exports = { routeRobot, goalOrientedRobot, VillageState };
+module.exports = {
+  routeRobot,
+  goalOrientedRobot,
+  VillageState,
+  findRoute,
+  roadGraph,
+  buildGraph,
+  roads,
+};

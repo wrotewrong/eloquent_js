@@ -17,6 +17,7 @@ function compareRobots(robot1, memory1, robot2, memory2) {
 
   function mean(result, testCount) {
     return Math.round(result / testCount);
+    // return result / testCount;
   }
 
   for (let i = 0; i <= testCount; i++) {
@@ -55,4 +56,6 @@ function compareRobots(robot1, memory1, robot2, memory2) {
 //   console.log(`Robot 2 needed ${total2 / 100}`);
 // }
 
-compareRobots(routeRobot, [], goalOrientedRobot, []);
+module.exports = { compareRobots };
+
+// compareRobots(routeRobot, [], goalOrientedRobot, []);
